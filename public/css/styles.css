@@ -1,0 +1,55 @@
+/* Reset margin và padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Đặt body thành flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar .nav-link {
+    color: #403434;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #007bff;
+}
+
+/* Đảm bảo container chiếm phần không gian còn lại */
+.container {
+    min-width: 800px;
+    margin: 20px auto;
+    flex: 1; /* Chiếm phần còn lại của không gian để đẩy footer xuống */
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Add any additional styles for the footer and other parts of the layout */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Đẩy footer xuống dưới nếu nội dung không đủ */
+}
+
+/* CSS để tạo hiệu ứng cho nút active */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff;
+}
